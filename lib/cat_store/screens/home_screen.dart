@@ -27,7 +27,9 @@ class CatScreen extends StatelessWidget {
               return GestureDetector(
                 onTap: () => Get.to(CatDetailScreen()),
                 child: Column(children: [
-                  Image.network(photo.value.url),
+                  Container(
+                      height: MediaQuery.of(context).size.height / 2,
+                      child: Image.network(photo.value.url)),
                 ]),
               );
             } else {
