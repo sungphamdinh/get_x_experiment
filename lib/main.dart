@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_x_experiment/cat_store/screens/home_screen.dart';
+
+import 'login/login_screen.dart';
 
 void main() {
   runApp(GetMaterialApp(
@@ -12,6 +13,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // return CounterScreen();
-    return CatScreen();
+    // return CatScreen();
+    return LoginScreen();
   }
 }
